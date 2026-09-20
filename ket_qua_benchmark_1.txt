@@ -1,0 +1,45 @@
+BÁO CÁO KẾT QUẢ BENCHMARK CÁ NHÂN — LAB 7
+Thành viên 1: Nguyễn Tuấn Anh (R1 - HeadingChunker)
+Tập dữ liệu: 10 tài liệu E-commerce
+====================================================================
+
+=======================================================
+CHIẾN LƯỢC: HeadingChunker (Thành viên 1 - Nguyễn Tuấn Anh) (Tổng số chunks: 310)
+Backend Embedding: mock embeddings fallback
+=======================================================
+
+[Câu 1] Màn hình điện thoại mua tại Revibe được bảo hành trong bao lâu và có những điều kiện loại trừ nào?
+  - Gold Doc: revibe-terms-and-warranty
+  - Top-3 Docs: ['tamara-customer-terms', 'reveni-terms-of-use', 'shopee-returns-buyer']
+  - Điểm câu: 0.0/2.0
+  - Top-1 Preview: ### 1. Introduction 1.2  The Merchant from whom you purchase goods or services using Tamara Services is not a party to these Terms and Condi...
+
+[Câu 2] Khi mua hàng tại Newegg, phí hoàn kho (restocking fee) áp dụng cho những mặt hàng nào và mức phí là bao nhiêu?
+  - Gold Doc: newegg-return-policy
+  - Top-3 Docs: ['newegg-return-policy', 'newegg-return-policy', 'reveni-terms-of-use']
+  - Điểm câu: 1.0/2.0
+  - Top-1 Preview: ### Refunds  Once your return has been processed, refunds will be issued back to your original payment method. If the original payment metho...
+
+[Câu 3 - A/B FILTER TEST] Query: Khi đơn hàng giao thành công mà hai bên không phát sinh khiếu nại, sau bao nhiêu ngày tiền thanh toán sẽ được giải ngân vào Số Dư Tài Khoản?
+  * KHÔNG lọc (unfiltered): Top-1 doc=tamara-customer-terms (score=0.345)
+  * CÓ lọc (filter={'audience': 'seller'}): Top-1 doc=revibe-seller-guidelines (score=0.143)
+
+[Câu 3] Khi đơn hàng giao thành công mà hai bên không phát sinh khiếu nại, sau bao nhiêu ngày tiền thanh toán sẽ được giải ngân vào Số Dư Tài Khoản?
+  - Gold Doc: shopee-returns-seller
+  - Top-3 Docs: ['revibe-seller-guidelines', 'revibe-seller-guidelines', 'shopee-returns-seller']
+  - Điểm câu: 1.0/2.0
+  - Top-1 Preview: ## Sell up to 100 devices per day!  Are you a store-owner or manager? In Revibe, we have dozens of sellers that make all of our customers ha...
+
+[Câu 4] Khách hàng mua hàng tại Refurbed cần làm những bước nào trước khi đóng gói gửi trả thiết bị?
+  - Gold Doc: refurbed-return-policy
+  - Top-3 Docs: ['reveni-terms-of-use', 'tamara-customer-terms', 'tamara-customer-terms']
+  - Điểm câu: 0.0/2.0
+  - Top-1 Preview: ## 7. Intellectual and industrial properties  The Website is a collective work authored by REVENI, which holds all intellectual and industri...
+
+[Câu 5] Theo quy định Shopee, Người Bán phải chịu những loại phí cố định và phí giao dịch nào trên mỗi đơn hàng thành công?
+  - Gold Doc: shopee-returns-seller
+  - Top-3 Docs: ['reebelo-terms-of-service', 'tamara-customer-terms', 'revibe-terms-and-warranty']
+  - Điểm câu: 0.0/2.0
+  - Top-1 Preview: ## 4. Warranty, Refunds, and Shipping - **Warranty and Refunds:** Reebelo maintains its limited product warranty and refund policies on its ...
+
+--> TỔNG ĐIỂM TRUY XUẤT CHO "HeadingChunker (Thành viên 1 - Nguyễn Tuấn Anh)": 2.0/10.0

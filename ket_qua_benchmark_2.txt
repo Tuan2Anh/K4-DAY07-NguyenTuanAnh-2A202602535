@@ -1,0 +1,72 @@
+﻿[INFO] Su dung MockEmbedder (deterministic hash)
+
+[BUOC 1 & 2] Nap va Chunking tai lieu tu data\e_comercial...
+-> Da nap 10 file .md, sinh ra tong cong 450 chunks.
+
+==========================================================================================
+KET QUA BENCHMARK RETRIEVAL - CHIEN LUOC: RecursiveChunker(chunk_size=350)
+==========================================================================================
+
+[CAU 1] M├án h├¼nh ─æiß╗çn thoß║íi mua tß║íi Revibe ─æ╞░ß╗úc bß║úo h├ánh trong bao l├óu v├á c├│ nhß╗»ng ─æiß╗üu kiß╗çn loß║íi trß╗½ n├áo?
+  * Gold Doc   : revibe-terms-and-warranty
+  * Filter     : None
+  * Gold Answer: M├án h├¼nh chß╗ë ─æ╞░ß╗úc bß║úo h├ánh trong 10 ng├áy ─æß║ºu ti├¬n kß╗â tß╗½ ng├áy mua. Sau 10 ng├áy, bß║úo h├ánh chß╗ë ├íp dß╗Ñng cho c├íc linh kiß╗çn kh├íc ngoß║íi trß╗½ m├án h├¼nh. C├íc tr╞░ß╗¥ng hß╗úp nh╞░ r╞íi vß╗í vß║¡t l├╜, v├áo n╞░ß╗¢c hoß║╖c tß╗▒ ├╜ sß╗¡a chß╗»a sß║╜ bß╗ï tß╗½ chß╗æi bß║úo h├ánh.
+  * Top-3 Retrieved Chunks:
+    [1] Score: +0.4619 | doc_id: tamara-customer-terms          [X]
+        Trich doan: "You acknowledge that failure to provide a working Card on File will affect your ability to complete a successf..."
+    [2] Score: +0.3760 | doc_id: trang-bao-tri-bao-hanh-doi-tra [X]
+        Trich doan: "#### 1.2 ─Éß╗òi sß║ún phß║⌐m mß╗¢i kh├íc model - Model mß╗¢i phß║úi c├│ trß╗ï gi├í lß╗¢n h╞ín hoß║╖c bß║▒ng trß╗ï gi├í sß║ún phß║⌐m c┼⌐, kh├ích ..."
+    [3] Score: +0.3329 | doc_id: revibe-terms-and-warranty      [V] (GOLD DOC)
+        Trich doan: "purpose.  Some states/jurisdictions do not allow the exclusion or limitation of incidental or consequential da..."
+
+[CAU 2] Khi mua h├áng tß║íi Newegg, ph├¡ ho├án kho (restocking fee) ├íp dß╗Ñng cho nhß╗»ng mß║╖t h├áng n├áo v├á mß╗⌐c ph├¡ l├á bao nhi├¬u?
+  * Gold Doc   : newegg-return-policy
+  * Filter     : None
+  * Gold Answer: Mß╗⌐c ph├¡ ho├án kho l├á 15%, ├íp dß╗Ñng cho c├íc sß║ún phß║⌐m ─æ├ú bß╗ï b├│c hß╗Öp/mß╗ƒ seal thuß╗Öc c├íc danh mß╗Ñc: ß╗ò cß╗⌐ng (HD), bo mß║ích chß╗º (MB), card ─æß╗ô hß╗ìa (VGA), m├íy chiß║┐u (Projector) v├á tivi (TV). Sß║ún phß║⌐m c├▓n nguy├¬n seal hoß║╖c bß╗ï lß╗ùi/hß╗Ång do vß║¡n chuyß╗ân kh├┤ng bß╗ï t├¡nh ph├¡ n├áy.
+  * Top-3 Retrieved Chunks:
+    [1] Score: +0.3427 | doc_id: revibe-terms-and-warranty      [X]
+        Trich doan: "Both the Revibe Warranty and Revibe Extended Warranty are non-transferable and apply only to the original purc..."
+    [2] Score: +0.2851 | doc_id: revibe-terms-and-warranty      [X]
+        Trich doan: "You further agree that all Updates will be (i) deemed to constitute an integral part of the website, and (ii) ..."
+    [3] Score: +0.2850 | doc_id: newegg-return-policy           [V] (GOLD DOC)
+        Trich doan: "These products may be covered by a manufacturer warranty which can be obtained by contacting the respective ma..."
+
+[CAU 3] Khi ─æ╞ín h├áng giao th├ánh c├┤ng m├á hai b├¬n kh├┤ng ph├ít sinh khiß║┐u nß║íi, sau bao nhi├¬u ng├áy tiß╗ün thanh to├ín sß║╜ ─æ╞░ß╗úc giß║úi ng├ón v├áo Sß╗æ D╞░ T├ái Khoß║ún?
+  * Gold Doc   : shopee-returns-seller
+  * Filter     : {'audience': 'seller'}
+  * Gold Answer: Nß║┐u Ng╞░ß╗¥i Mua kh├┤ng bß║Ñm '─É├ú nhß║¡n ─æ╞░ß╗úc h├áng' v├á kh├┤ng y├¬u cß║ºu trß║ú h├áng, Shopee sß║╜ giß║úi ng├ón tiß╗ün cho Ng╞░ß╗¥i B├ín nhanh nhß║Ñt v├áo ng├áy thß╗⌐ 04 (bß╗æn) kß╗â tß╗½ khi ─æ╞ín h├áng cß║¡p nhß║¡t trß║íng th├íi 'Giao H├áng Th├ánh C├┤ng'.
+  * Top-3 Retrieved Chunks:
+    [1] Score: +0.1737 | doc_id: shopee-returns-seller          [V] (GOLD DOC)
+        Trich doan: "- Ng╞░ß╗¥i B├ín chß╗ïu tr├ích nhiß╗çm chi trß║ú v├á ph├¡ ─æ╞░ß╗úc cß║Ñn trß╗½ trß╗▒c tiß║┐p tr├¬n tß╗½ng ─æ╞ín h├áng tr╞░ß╗¢c khi tiß╗ün ─æ╞░ß╗úc chuy..."
+    [2] Score: +0.1315 | doc_id: revibe-seller-guidelines       [X]
+        Trich doan: "Register in a few clicks and our team will contact you to get started.  ## How does it work?  ## Fill your pri..."
+    [3] Score: +0.1300 | doc_id: revibe-seller-guidelines       [X]
+        Trich doan: "## Get paid every week  We pay all the orders you have shipped on a weekly basis. We will always automatically..."
+  --- [A/B TEST DOI CHUNG: KHONG DUNG FILTER] ---
+    [1] Score: +0.3505 | doc_id: tamara-customer-terms          [X]
+    [2] Score: +0.3335 | doc_id: tamara-customer-terms          [X]
+    [3] Score: +0.3194 | doc_id: revibe-terms-and-warranty      [X]
+
+[CAU 4] Kh├ích h├áng mua h├áng tß║íi Refurbed cß║ºn l├ám nhß╗»ng b╞░ß╗¢c n├áo tr╞░ß╗¢c khi ─æ├│ng g├│i gß╗¡i trß║ú thiß║┐t bß╗ï?
+  * Gold Doc   : refurbed-return-policy
+  * Filter     : None
+  * Gold Answer: Kh├ích h├áng cß║ºn: (1) Sao l╞░u dß╗» liß╗çu v├á kh├┤i phß╗Ñc c├ái ─æß║╖t gß╗æc (factory settings); (2) ─É─âng xuß║Ñt khß╗Åi mß╗ìi t├ái khoß║ún bß║úo mß║¡t c├í nh├ón (iCloud, Google); (3) ─É├│ng g├│i bß║▒ng hß╗Öp carton ch├¿n ─æß╗çm l├│t, kh├┤ng d├╣ng phong b├¼ ─æß╗çm kh├¡; (4) In v├á d├ín nh├ún ho├án trß║ú mß╗¢i, b├│c nh├ún c┼⌐; (5) Tuyß╗çt ─æß╗æi kh├┤ng gß╗¡i thiß║┐t bß╗ï c├│ pin bß╗ï phß╗ông (swollen battery).
+  * Top-3 Retrieved Chunks:
+    [1] Score: +0.3197 | doc_id: revibe-terms-and-warranty      [X]
+        Trich doan: "It covers misuse, including accidental damage, but is limited to one claim per warranty period. Claims exceedi..."
+    [2] Score: +0.3070 | doc_id: tamara-customer-terms          [X]
+        Trich doan: "18.2  By agreeing to these Terms and Conditions, you undertake to submit unconditionally to the exclusive juri..."
+    [3] Score: +0.2919 | doc_id: tamara-customer-terms          [X]
+        Trich doan: "Such information may include your full name, address, email, phone number and age"
+
+[CAU 5] Theo quy ─æß╗ïnh Shopee, Ng╞░ß╗¥i B├ín phß║úi chß╗ïu nhß╗»ng loß║íi ph├¡ cß╗æ ─æß╗ïnh v├á ph├¡ giao dß╗ïch n├áo tr├¬n mß╗ùi ─æ╞ín h├áng th├ánh c├┤ng?
+  * Gold Doc   : shopee-returns-seller
+  * Filter     : None
+  * Gold Answer: Ng╞░ß╗¥i B├ín chß╗ïu 2 loß║íi ph├¡ ch├¡nh: (1) Ph├¡ Xß╗¡ L├╜ Giao Dß╗ïch l├á 6% (─æ├ú bao gß╗ôm thuß║┐ GTGT) ├íp dß╗Ñng cho tß║Ñt cß║ú ph╞░╞íng thß╗⌐c thanh to├ín; (2) Ph├¡ Cß╗æ ─Éß╗ïnh (hoa hß╗ông s├án) t├¡nh theo tß╗╖ lß╗ç phß║ºn tr─âm t├╣y theo ng├ánh h├áng tr├¬n gi├í b├ín sß║ún phß║⌐m.
+  * Top-3 Retrieved Chunks:
+    [1] Score: +0.3266 | doc_id: tamara-customer-terms          [X]
+        Trich doan: "If a credit report is returned as negative, you acknowledge that Tamara may restrict your access to Tamara Ser..."
+    [2] Score: +0.3254 | doc_id: tamara-customer-terms          [X]
+        Trich doan: "5.1  By creating a Tamara Account, you acknowledge and agree that you will communicate with us electronically"
+    [3] Score: +0.3068 | doc_id: refurbed-return-policy         [X]
+        Trich doan: "In your account, find the item you wish to return or exchange and select "Get help". Indicate the reason.   Ti..."

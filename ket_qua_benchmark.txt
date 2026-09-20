@@ -1,0 +1,55 @@
+BENCHMARK RESULTS - FixedSizeChunker
+Files: 10 | Chunks: 264
+----------------------------------------------------------------------
+
+[1] Màn hình điện thoại mua tại Revibe được bảo hành trong bao lâu và có những điều kiện loại trừ nào?
+Dạng: Hỏi điều kiện & thời hạn | Filter: None | Gold: revibe-terms-and-warranty
+  Top-1: score=0.2775 | revibe-terms-and-warranty (#revibe-terms-and-warranty#36) [*]
+         s or the limitations on the applicable statutory rights of a consumer, so some or all of the above e...
+  Top-2: score=0.2770 | tamara-customer-terms (#tamara-customer-terms#59)
+         amara Services will be uninterrupted or error-free. To the fullest extent permitted by the Applicabl...
+  Top-3: score=0.2547 | revibe-terms-and-warranty (#revibe-terms-and-warranty#9) [*]
+         ploring, evaluating, and purchasing our products.  As with any shopping experience, there are terms ...
+  Gold Answer: Màn hình chỉ được bảo hành trong 10 ngày đầu tiên kể từ ngày mua. Sau 10 ngày, bảo hành chỉ áp dụng cho các linh kiện khác ngoại trừ màn hình. Các trường hợp như rơi vỡ vật lý, vào nước hoặc tự ý sửa chữa sẽ bị từ chối bảo hành.
+
+[2] Khi mua hàng tại Newegg, phí hoàn kho (restocking fee) áp dụng cho những mặt hàng nào và mức phí là bao nhiêu?
+Dạng: Tra cứu số liệu & phạm vi | Filter: None | Gold: newegg-return-policy
+  Top-1: score=0.3164 | tamara-customer-terms (#tamara-customer-terms#84)
+         id by the Customer including, where applicable, any value-added tax and shipping charges in connecti...
+  Top-2: score=0.2961 | reebelo-terms-of-service (#reebelo-terms-of-service#2)
+         t information provided by users is accurate or up-to-date. - **Direct Offers & Supervision:** Reebel...
+  Top-3: score=0.2736 | shopee-returns-seller (#shopee-returns-seller#0)
+         # Quy định Trả hàng, Hoàn tiền, Phí và Thanh toán Shopee (Dành cho Người Bán)  Điều khoản có hiệu lự...
+  Gold Answer: Mức phí hoàn kho là 15%, áp dụng cho các sản phẩm đã bị bóc hộp/mở seal thuộc các danh mục: ổ cứng (HD), bo mạch chủ (MB), card đồ họa (VGA), máy chiếu (Projector) và tivi (TV). Sản phẩm còn nguyên seal hoặc bị lỗi/hỏng do vận chuyển không bị tính phí này.
+
+[3] Khi đơn hàng giao thành công mà hai bên không phát sinh khiếu nại, sau bao nhiêu ngày tiền thanh toán sẽ được giải ngân vào Số Dư Tài Khoản? (Câu A/B Test)
+Dạng: A/B Filter Test (Quy trình thanh toán) | Filter: {'audience': 'seller'} | Gold: shopee-returns-seller
+  Top-1: score=0.2291 | shopee-returns-seller (#shopee-returns-seller#1) [*]
+          Người Bán nhanh nhất vào ngày thứ 04 (bốn) kể từ khi đơn hàng được cập nhật trạng thái "Giao Hàng T...
+  Top-2: score=0.1121 | revibe-seller-guidelines (#revibe-seller-guidelines#3)
+         our business  We have a big team that handles customer care, taking the hassle off from you. You foc...
+  Top-3: score=0.1064 | revibe-seller-guidelines (#revibe-seller-guidelines#2)
+         et paid. No commission on your price. We buy at your price and then we set our price to the customer...
+  Gold Answer: Nếu Người Mua không bấm "Đã nhận được hàng" và không yêu cầu trả hàng, Shopee sẽ giải ngân tiền cho Người Bán nhanh nhất vào ngày thứ 04 (bốn) kể từ khi đơn hàng cập nhật trạng thái "Giao Hàng Thành Công".
+
+[4] Khách hàng mua hàng tại Refurbed cần làm những bước nào trước khi đóng gói gửi trả thiết bị?
+Dạng: Hỏi quy trình thực hiện | Filter: None | Gold: refurbed-return-policy
+  Top-1: score=0.4016 | tamara-customer-terms (#tamara-customer-terms#58)
+         e Terms and Conditions, including the implied warranties regarding the Merchant's ability and suitab...
+  Top-2: score=0.3768 | tamara-customer-terms (#tamara-customer-terms#22)
+         ra Account, you acknowledge and agree that you will communicate with us electronically. Therefore, y...
+  Top-3: score=0.3449 | reebelo-terms-of-service (#reebelo-terms-of-service#7)
+         Purpose:** The Buyer Protection Fee contributes to the costs associated with operating and maintaini...
+  Gold Answer: Khách hàng cần: (1) Sao lưu dữ liệu và khôi phục cài đặt gốc (factory settings); (2) Đăng xuất khỏi mọi tài khoản bảo mật cá nhân (iCloud, Google); (3) Đóng gói bằng hộp carton chèn đệm lót, không dùng phong bì đệm khí; (4) In và dán nhãn hoàn trả mới, bóc nhãn cũ; (5) Tuyệt đối không gửi thiết bị có pin bị phồng (swollen battery).
+
+[5] Theo quy định Shopee, Người Bán phải chịu những loại phí cố định và phí giao dịch nào trên mỗi đơn hàng thành công?
+Dạng: Liệt kê danh mục | Filter: None | Gold: shopee-returns-seller
+  Top-1: score=0.3450 | tamara-customer-terms (#tamara-customer-terms#51)
+         ve the right to withdraw your consent to the processing of your personal data at any time, subject t...
+  Top-2: score=0.3357 | revibe-terms-and-warranty (#revibe-terms-and-warranty#24)
+         ent Agreement.  Guidelines for Reviews  When posting a review, you should comply with laws and regul...
+  Top-3: score=0.2809 | reveni-terms-of-use (#reveni-terms-of-use#0)
+         # Legal Notice and Terms of Use  ## 1. Information about the Company  We are Reveni S.L. ("REVENI"),...
+  Gold Answer: Người Bán chịu 2 loại phí chính: (1) Phí Xử Lý Giao Dịch là 6% (đã bao gồm thuế GTGT) áp dụng cho tất cả phương thức thanh toán; (2) Phí Cố Định (hoa hồng sàn) tính theo tỷ lệ phần trăm tùy theo ngành hàng trên giá bán sản phẩm.
+
+Kết quả: 2/5 câu hỏi có Gold Doc trong Top-3
